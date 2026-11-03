@@ -22,15 +22,13 @@ Os pedidos literais registrados no histórico anterior do projeto foram: “Faç
 
 As respostas iniciais, análises e refatorações documentadas foram executadas **com IA**, não manualmente pela dupla. O professor também exige intervenção crítica e contribuição manual dos integrantes; esta documentação, por si só, não comprova essa etapa. Os relatos de revisão manual informados pelos integrantes aparecem ao fim de cada ficha. As datas, os resultados detalhados e eventuais correções próprias devem ser conferidos no `REGISTRO_DA_DUPLA.md`.
 
-**Ressalva sobre autoria:** HTML, CSS, integração com Bootstrap e ajustes de interface também foram gerados com apoio de IA, conforme a continuidade do trabalho. Caso o enunciado reserve HTML/CSS para autoria manual, não se deve declarar essa parte como inteiramente escrita pelos estudantes.
-
----
+**Ressalva sobre autoria:** HTML, CSS, integração com Bootstrap e ajustes de interface também foram gerados com apoio de IA, conforme a continuidade do trabalho. 
 
 ## Ficha 1/3 — Simulador: conclusão e progresso
 
 ### Prompt
 
-**Origem:** especificação técnica formulada pelo assistente a partir dos pedidos reais acima, não prompt literal da dupla.
+**Origem:** especificação técnica formulada pelo assistente a partir dos pedidos reais acima.
 
 > Refinar a microaplicação Vanilla mantendo os quatro cenários, feedback acessível e exportação. Conferir bloqueio sem resposta, reinício e representação de progresso até a conclusão. Não transformar a pontuação didática em diagnóstico.
 
