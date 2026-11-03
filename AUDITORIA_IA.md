@@ -292,13 +292,13 @@ A versão clássica `app.bundle.js` permite abrir `index.html` por `file://`; os
 
 ## Conferência complementar do pacote — 11/02/2026
 
-Nesta preparação para a entrega foi incluído em `ui.test.cjs` um caso para simular erro de construção de gráfico, mas sua execução por `jsdom` ainda depende da instalação das dependências de desenvolvimento. Como conferência adicional, o mesmo cenário foi **executado em Chromium headless** com os scripts locais incorporados: a tabela e o aviso de indisponibilidade continuaram funcionando e não houve exceção de JavaScript. O fluxo de quatro cenários, o download, os três indicadores e a alternância de tema também funcionaram em Chromium por esse método, com zero mensagens de Console do tipo `error`. Naquela conferência técnica (02/11/2026), o acesso real ao GitHub Pages e às CDNs **não foi verificado**. A publicação posterior está registrada na atualização abaixo.
+Nesta preparação para a entrega foi incluído em `ui.test.cjs` um caso para simular erro de construção de gráfico, mas sua execução por `jsdom` ainda depende da instalação das dependências de desenvolvimento. Como conferência adicional, o mesmo cenário foi **executado em Chromium headless** com os scripts locais incorporados: a tabela e o aviso de indisponibilidade continuaram funcionando e não houve exceção de JavaScript. O fluxo de quatro cenários, o download, os três indicadores e a alternância de tema também funcionaram em Chromium por esse método, com zero mensagens de Console do tipo `error`. Naquela conferência técnica (11/02/2026), o acesso real ao GitHub Pages e às CDNs **não foi verificado**. A publicação posterior está registrada na atualização abaixo.
 
 Esta conferência adicional foi feita pelo assistente. **Não substitui intervenção manual dos integrantes, autoria acadêmica exigida ou commits próprios.**
 
 ## Atualização posterior — publicação e revisão da dupla
 
-Após a conferência técnica de 02/11/2026, o projeto foi publicado e os integrantes informaram ter realizado revisões manuais do simulador, dos gráficos e do tema. Os procedimentos e resultados declarados devem ser confrontados com `REGISTRO_DA_DUPLA.md`; esta seção não substitui capturas, logs ou outras evidências de execução.
+Após a conferência técnica de 11/02/2026, o projeto foi publicado e os integrantes informaram ter realizado revisões manuais do simulador, dos gráficos e do tema. Os procedimentos e resultados declarados devem ser confrontados com `REGISTRO_DA_DUPLA.md`; esta seção não substitui capturas, logs ou outras evidências de execução.
 
 - **Repositório público:** https://github.com/henriquepedro500/Margem-Humana
 - **GitHub Pages:** https://henriquepedro500.github.io/Margem-Humana/
