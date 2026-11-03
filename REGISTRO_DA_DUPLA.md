@@ -1,13 +1,23 @@
 ## 1. Identificação e divisão de tarefas
 
-| Identificação | Pedro Henrique | João Pedro |
+## Contribuições autorais — Personalização do CSS
+
+As alterações abaixo foram realizadas manualmente pelos integrantes no arquivo `styles.css`, com o objetivo de melhorar a apresentação visual e a legibilidade do projeto Margem Humana.
+
+| Informação | Pedro Henrique | João Pedro |
 |---|---|---|
-| Nome completo | Pedro Henrique Teixeira De Lima | João Pedro De Souza |
-| Usuário GitHub | @henriquepedro500 | @joaoopedro2007 |
-| Área revisada | Simulador, protocolo, tema e documentação | Gráficos, responsividade, Console e acessibilidade |
-| Arquivos comprovadamente editados | REGISTRO_DA_DUPLA.md | REGISTRO_DA_DUPLA.md |
-| Justificativa da revisão | Verificar o comportamento do laboratório, das decisões e dos controles do site | Verificar a apresentação dos indicadores, adaptação das telas e funcionamento dos recursos |
-| URL de commit(s) reais | [Commit Pedro](https://github.com/henriquepedro500/Margem-Humana/commit/a3ae0a62b52ef8ec1e224b488f722745d2d746a7) | [Commit João](https://github.com/henriquepedro500/Margem-Humana/commit/618a448a0fb835c015831fe1ff887f74f8ed6943) |
+| Integrante | Pedro Henrique Teixeira De Lima | João Pedro De Souza |
+| GitHub | @henriquepedro500 | @joaoopedro2007 |
+| Arquivo alterado | `styles.css` | `styles.css` |
+| Elemento modificado | Variável `--radius` em `:root` | Propriedade `font-size` da classe `.section-lead` |
+| Valor anterior | `1.15rem` | `1.05rem` |
+| Valor novo | `1.35rem` | `1.1rem` |
+| Objetivo | Personalizar o arredondamento dos componentes | Melhorar a legibilidade dos textos introdutórios |
+| Justificativa | Cantos mais arredondados para proporcionar uma aparência visual mais suave | Aumento discreto do tamanho dos textos para facilitar a leitura |
+| Validação | Alteração salva no GitHub e aparência conferida no site publicado | Alteração salva no GitHub; registrar a confirmação visual |
+| Evidência | [INSERIR LINK DO NOVO COMMIT DE PEDRO] | [INSERIR LINK DO NOVO COMMIT DE JOÃO] |
+
+**Observação sobre autoria:** as alterações descritas são contribuições manuais da dupla sobre uma base de CSS anteriormente desenvolvida com assistência de IA. Os commits permitem verificar as modificações realizadas pelos integrantes.
 
 ## 2. Registro de revisão crítica de auditoria
 
