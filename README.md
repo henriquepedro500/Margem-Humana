@@ -101,13 +101,6 @@ Compatibilidade pretendida: Chrome, Firefox, Safari e Edge modernos. Há tratame
 | Auditoria | AUDITORIA_IA.md e auditoria/v1/ | Registro técnico de IA; completar atuação real |
 | Publicação | docs/ENTREGA.md | Conta GitHub e deploy pendentes |
 
-A divisão humana precisa ser preenchida com nomes e hashes reais em [docs/REGISTRO_DA_DUPLA.md](docs/REGISTRO_DA_DUPLA.md). Não simular dois autores em commits. O histórico do GitHub deverá refletir as alterações realizadas após a revisão de cada integrante. O [checklist dos nove requisitos](docs/CHECKLIST.md) explicita quais itens ainda não estão comprovados.
-
-### Checklist de submissão
-
-O conteúdo está preparado para a etapa acadêmica de revisão: tema delimitado, HTML semântico, CSS com `:root`, Bootstrap 5 via CDN com contingência local, simulador, gráficos e três fichas de auditoria. **Isso não equivale à aprovação automática:** autoria humana, teste final em F12, publicação e histórico com contribuições reais não podem ser feitos pelo ZIP. Consultar [docs/CHECKLIST.md](docs/CHECKLIST.md) e [docs/ENTREGA.md](docs/ENTREGA.md) e marcar cada item apenas após verificar.
-
-A publicação por GitHub Pages exige o arquivo `index.html` na raiz da branch que será publicada, junto com `css/`, `js/` e `assets/`. Após criar o repositório público, escolher **Settings → Pages → Deploy from a branch → main / (root)**, salvar, abrir a URL mostrada pelo GitHub e testar página, componentes, fontes, Console e larguras de tela. Só então preencher os dois links acima.
 
 ### Referências
 
