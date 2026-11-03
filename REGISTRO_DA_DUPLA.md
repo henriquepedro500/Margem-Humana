@@ -11,9 +11,8 @@ Este arquivo é um **modelo de registro**, não comprova participação por si s
 | Área revisada e alterações feitas | Simuladores e registro de resultado  | Gráfico, cards e responsividade |
 | Arquivos efetivamente editados | index.html e font.css | index.html |
 | Justificativa das decisões próprias | Erro ao entrar no arquivo do produto| Indicadores não correspondendo ao gráfico |
-| URL de commit(s) reais | (https://henriquepedro500.github.io/Margem-Humana/)https://henriquepedro500.github.io/Margem-Humana/https://henriquepedro500.github.io/Margem-Humana/)
+| URL de commit(s) reais | (https://henriquepedro500.github.io/Margem-Humana/)https://henriquepedro500.github.io/Margem-Humana/https://henriquepedro500.github.io/Margem-Humana/) | (https://github.com/henriquepedro500/Margem-Humana/commit/926e98a8258ac16e8367e91a19d141e984fcf60a) |
 
-| (https://github.com/henriquepedro500/Margem-Humana/commit/926e98a8258ac16e8367e91a19d141e984fcf60a) |
 
 **Aviso de autoria:** o pacote inicial (inclusive HTML, CSS e JavaScript) recebeu assistência de IA. Apenas ações que os alunos realmente fizeram, e podem justificar, devem aparecer como contribuições autorais.
 
