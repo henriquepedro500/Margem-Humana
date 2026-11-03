@@ -11,13 +11,12 @@ Site sobre autonomia, empatia e aprendizagem de jovens atendentes diante de suge
 
 ### Integrantes, repositório e site publicado
 
-| Campo da entrega | Preencher pela dupla, com informações reais |
+| Campo | Informação |
 |---|---|
-| Estudante 1 | **Pedro Henrique Teixeira De Lima** — GitHub: **@henriquepedro500** |
-| Estudante 2 | **João Pedro De Souza** — GitHub: **@joaoopedro2007** |
-| Repositório público | **[URL REAL DO REPOSITÓRIO NO GITHUB]** |
-| GitHub Pages | **[URL REAL DO SITE APÓS PUBLICAR]** |
-| Data de publicação e conferência | **[DATA E RESPONSÁVEL]** |
+| Estudante 1 | Pedro Henrique Teixeira De Lima — @henriquepedro500 |
+| Estudante 2 | João Pedro De Souza — @joaoopedro2007 |
+| Repositório público | https://github.com/henriquepedro500/Margem-Humana |
+| GitHub Pages | https://henriquepedro500.github.io/Margem-Humana/ |
 
 Não substitua esses campos por nomes fictícios. Use [docs/REGISTRO_DA_DUPLA.md](docs/REGISTRO_DA_DUPLA.md) para registrar, com evidência, o trabalho de cada integrante, testes manuais e correções efetuadas.
 
