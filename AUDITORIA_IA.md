@@ -8,19 +8,19 @@
 
 **Sim. Este arquivo contém três fichas**, cada uma com as quatro partes exigidas — **Prompt, Resposta, Diagnóstico e Refatoração** — e seus arquivos de evidência.
 
-| Ficha | Prompt | Resposta inicial | Diagnóstico | Refatoração verificável |
-|---|---|---|---|---|
-| 1 — Simulador | Abaixo | `auditoria/v1/simulator.js` | Ausência de progresso na conclusão | `js/simulator.js` |
-| 2 — Gráfico | Abaixo | `auditoria/v1/chart.js` | Layout rígido e falha de criação não tratada | `js/chart.js` |
-| 3 — Tema | Abaixo | `auditoria/v1/theme.js` | Texto pouco eficiente no botão de navegação | `js/theme.js` |
+| **Ficha**     | **Prompt** | **Resposta inicial**        | **Diagnóstico**                              | **Refatoração verificável** |
+| ------------- | ---------- | --------------------------- | -------------------------------------------- | --------------------------- |
+| 1 — Simulador | Abaixo     | `auditoria-v1-simulator.js` | Ausência de progresso na conclusão           | `simulator.js`           |
+| 2 — Gráfico   | Abaixo     | `auditoria-v1-chart.js`     | Layout rígido e falha de criação não tratada | `chart.js`               |
+| 3 — Tema      | Abaixo     | `auditoria-v1-theme.js`     | Texto pouco eficiente no botão de navegação  | `theme.js`               |
 
-**Como ler as evidências:** em cada ficha, o bloco de *Resposta* é um trecho literal da versão inicial; o arquivo completo está preservado em `auditoria/v1/`. O bloco de *Refatoração* contém o diff extraído dos arquivos efetivamente presentes neste projeto, e não uma alteração hipotética. A versão distribuída do JavaScript também aparece em `js/app.bundle.js`, gerada por `build.mjs`.
+**Como ler as evidências:** em cada ficha, o bloco de *Resposta* é um trecho literal da versão inicial; o arquivo completo está preservado em `auditoria-v1-*.js`. O bloco de *Refatoração* contém o diff extraído dos arquivos efetivamente presentes neste projeto, e não uma alteração hipotética. A versão distribuída do JavaScript também aparece em `app.bundle.js`, gerada por `build.mjs`.
 
 ## Origem dos prompts e responsabilidade
 
 Os pedidos literais registrados no histórico anterior do projeto foram: “Faça exatamente oq se pede baseado em um tema profissional e critivo q n seja generico” e “faça essa parte para mim por favor”. A descrição técnica apresentada como **Prompt** nas fichas foi elaborada pelo assistente para decompor esses pedidos; **não é a transcrição de três prompts independentes enviados pelos estudantes**. Não há registro confiável de três mensagens originais separadas, e elas não são inventadas aqui.
 
-As respostas iniciais, análises e refatorações documentadas foram executadas **com IA**, não manualmente pela dupla. O professor também exige intervenção crítica e contribuição manual dos integrantes; esta documentação, por si só, não comprova essa etapa. As tarefas humanas pendentes aparecem ao fim de cada ficha.
+As respostas iniciais, análises e refatorações documentadas foram executadas **com IA**, não manualmente pela dupla. O professor também exige intervenção crítica e contribuição manual dos integrantes; esta documentação, por si só, não comprova essa etapa. Os relatos de revisão manual informados pelos integrantes aparecem ao fim de cada ficha. As datas, os resultados detalhados e eventuais correções próprias devem ser conferidos no `REGISTRO_DA_DUPLA.md`.
 
 **Ressalva sobre autoria:** HTML, CSS, integração com Bootstrap e ajustes de interface também foram gerados com apoio de IA, conforme a continuidade do trabalho. Caso o enunciado reserve HTML/CSS para autoria manual, não se deve declarar essa parte como inteiramente escrita pelos estudantes.
 
@@ -38,7 +38,7 @@ As respostas iniciais, análises e refatorações documentadas foram executadas 
 
 ### Resposta
 
-**Artefato inicial gerado por IA:** `auditoria/v1/simulator.js` (versão completa preservada). Trecho do início da implementação:
+**Artefato inicial gerado por IA:** `auditoria-v1-simulator.js` (versão completa preservada). Trecho do início da implementação:
 
 ```javascript
 import { scenarios, evaluate, buildProtocol } from './scenarios.js';
@@ -69,11 +69,11 @@ A implementação inicial criava uma barra `<progress>` durante as etapas, poré
 
 ### Refatoração
 
-Foi acrescentada uma barra final com valor máximo alcançado e rótulo acessível; o contêiner de feedback foi ajustado. **Diff real** entre `auditoria/v1/simulator.js` e `js/simulator.js`:
+Foi acrescentada uma barra final com valor máximo alcançado e rótulo acessível; o contêiner de feedback foi ajustado. **Diff real** entre `auditoria-v1-simulator.js` e `simulator.js`:
 
 ```diff
---- auditoria/v1/simulator.js
-+++ js/simulator.js
+--- auditoria-v1-simulator.js
++++ simulator.js
 @@ -30,7 +30,7 @@
      }
      const confirm = element('button', revealed ? (index === scenarios.length-1 ? 'Ver protocolo' : 'Próximo cenário') : 'Analisar decisão','btn btn-primary');
@@ -97,9 +97,9 @@ Foi acrescentada uma barra final com valor máximo alcançado e rótulo acessív
    }
 ```
 
-**Evidência de teste já registrada no projeto:** `tests/ui.test.cjs`, caso `quatro cenários completos, foco, progresso final e reinício`. Para reproduzir, executar `npm install` e `npm run test:ui` no diretório do projeto. Os testes anteriormente relatados constam em `VALIDACAO.md`; a execução atual deve ser registrada separadamente.
+**Evidência de teste já registrada no projeto:** `ui.test.cjs`, caso `quatro cenários completos, foco, progresso final e reinício`. Para reproduzir, executar `npm install` e `npm run test:ui` no diretório do projeto. A execução de testes automatizados nesta versão precisa ser registrada separadamente.
 
-**Intervenção manual dos integrantes — :** Revisão manual realizada por Pedro Henrique Teixeira De Lima. Foram testados os quatro cenários, as decisões, os feedbacks, a pontuação e a exportação do protocolo. Os resultados e eventuais problemas foram documentados no REGISTRO_DA_DUPLA.md.
+**Revisão manual informada pela dupla:** Revisão manual realizada por Pedro Henrique Teixeira De Lima. Foram testados os quatro cenários, as decisões, os feedbacks, a pontuação e a exportação do protocolo. Os resultados e eventuais problemas foram documentados no REGISTRO_DA_DUPLA.md.
 
 ---
 
@@ -115,7 +115,7 @@ Foi acrescentada uma barra final com valor máximo alcançado e rótulo acessív
 
 ### Resposta
 
-**Artefato inicial gerado por IA:** `auditoria/v1/chart.js` (versão completa preservada). Trecho do início da implementação:
+**Artefato inicial gerado por IA:** `auditoria-v1-chart.js` (versão completa preservada). Trecho do início da implementação:
 
 ```javascript
 import { datasets, getDataset } from './data.js';
@@ -147,11 +147,11 @@ O código inicial usava `aspectRatio: 1.8` para a área gráfica, sem um contêi
 
 ### Refatoração
 
-A revisão passou a usar `div.chart-area` com `role=group` e `aria-label`, `maintainAspectRatio: false`, paletas específicas para tema claro/escuro e `try/catch` para falha na criação do gráfico. A altura é definida em `css/styles.css`. **Diff real** entre `auditoria/v1/chart.js` e `js/chart.js`:
+A revisão passou a usar `div.chart-area` com `role=group` e `aria-label`, `maintainAspectRatio: false`, paletas específicas para tema claro/escuro e `try/catch` para falha na criação do gráfico. A altura é definida em `styles.css`. **Diff real** entre `auditoria-v1-chart.js` e `chart.js`:
 
 ```diff
---- auditoria/v1/chart.js
-+++ js/chart.js
+--- auditoria-v1-chart.js
++++ chart.js
 @@ -9,10 +9,13 @@
    }
    const heading = element('h3');
@@ -194,9 +194,9 @@ A revisão passou a usar `div.chart-area` com `role=group` e `aria-label`, `main
    document.addEventListener('mh:theme',render);
 ```
 
-**Evidência de teste já registrada no projeto:** `tests/ui.test.cjs`, casos `ausência de Chart.js preserva tabela e troca de indicador` e `trocar dados ou tema não acumula instâncias do gráfico`. Eles verificam a contingência sem a biblioteca e o descarte de gráficos simulados. **Complemento de teste no pacote de 02/11/2026:** foi acrescentado a `tests/ui.test.cjs` o caso `falha na criação do gráfico mantém a tabela e informa indisponibilidade`, que simula uma exceção no construtor e verifica a tabela e a mensagem. **A execução deste novo teste DOM depende de `npm install` e ainda não foi revalidada nesta revisão.** O layout em navegador real permanece uma verificação manual.
+**Evidência de teste já registrada no projeto:** `ui.test.cjs`, casos `ausência de Chart.js preserva tabela e troca de indicador` e `trocar dados ou tema não acumula instâncias do gráfico`. Eles verificam a contingência sem a biblioteca e o descarte de gráficos simulados. **Complemento de teste no pacote de 02/11/2026:** foi acrescentado a `ui.test.cjs` o caso `falha na criação do gráfico mantém a tabela e informa indisponibilidade`, que simula uma exceção no construtor e verifica a tabela e a mensagem. **A execução deste teste DOM depende de `npm install`; a execução em navegador público não é comprovada apenas por esse teste.** O layout em navegador real permanece uma verificação manual.
 
-**Intervenção manual dos integrantes — :** Revisão manual realizada por João Pedro De Souza. Foram verificados os três indicadores, a apresentação dos dados, a responsividade e o funcionamento do gráfico no navegador. Os resultados foram documentados no REGISTRO_DA_DUPLA.md.
+**Revisão manual informada pela dupla:** Revisão manual realizada por João Pedro De Souza. Foram verificados os três indicadores, a apresentação dos dados, a responsividade e o funcionamento do gráfico no navegador. Os resultados foram documentados no REGISTRO_DA_DUPLA.md.
 
 ---
 
@@ -212,7 +212,7 @@ A revisão passou a usar `div.chart-area` com `role=group` e `aria-label`, `main
 
 ### Resposta
 
-**Artefato inicial gerado por IA:** `auditoria/v1/theme.js` (versão completa preservada). Trecho do início da implementação:
+**Artefato inicial gerado por IA:** `auditoria-v1-theme.js` (versão completa preservada). Trecho do início da implementação:
 
 ```javascript
 const KEY = 'margem-humana-theme';
@@ -244,11 +244,11 @@ A versão inicial usava o texto `Tema escuro: ativado` ou `Tema escuro: desativa
 
 ### Refatoração
 
-O texto visível foi reduzido para `Tema claro`/`Tema escuro` (a próxima opção); o `aria-label` passou a explicitar estado e ação. Permanecem `aria-pressed`, `data-bs-theme` e o disparo do evento `mh:theme`. **Diff real** entre `auditoria/v1/theme.js` e `js/theme.js`:
+O texto visível foi reduzido para `Tema claro`/`Tema escuro` (a próxima opção); o `aria-label` passou a explicitar estado e ação. Permanecem `aria-pressed`, `data-bs-theme` e o disparo do evento `mh:theme`. **Diff real** entre `auditoria-v1-theme.js` e `theme.js`:
 
 ```diff
---- auditoria/v1/theme.js
-+++ js/theme.js
+--- auditoria-v1-theme.js
++++ theme.js
 @@ -16,7 +16,8 @@
      document.documentElement.classList.toggle('theme-dark',value==='dark');
      document.documentElement.setAttribute('data-bs-theme',value);
@@ -261,38 +261,50 @@ O texto visível foi reduzido para `Tema claro`/`Tema escuro` (a próxima opçã
    apply(preference ?? (media.matches?'dark':'light'));
 ```
 
-**Evidência de teste já registrada no projeto:** `tests/ui.test.cjs`, caso `tema persiste e funciona por file:// mesmo sem storage`; o teste verifica a classe do tema, `aria-pressed`, persistência onde disponível e retorno ao tema claro. **Limite:** esse teste não constitui avaliação completa com leitor de tela.
+**Evidência de teste já registrada no projeto:** `ui.test.cjs`, caso `tema persiste e funciona por file:// mesmo sem storage`; o teste verifica a classe do tema, `aria-pressed`, persistência onde disponível e retorno ao tema claro. **Limite:** esse teste não constitui avaliação completa com leitor de tela.
 
-**Intervenção manual dos integrantes — :** Revisão realizada por Pedro Henrique e João Pedro. Foram testados os modos claro e escuro, a legibilidade dos elementos e a persistência da preferência após atualizar a página.
+**Revisão manual informada pela dupla:** Revisão realizada por Pedro Henrique e João Pedro. Foram testados os modos claro e escuro, a legibilidade dos elementos e a persistência da preferência após atualizar a página.
 
 ---
 
 ## Checklist de entrega da auditoria
 
-- [x] **Três fichas identificadas** (simulador, gráfico e tema).
-- [x] **Prompt documentado** em cada ficha, com origem declarada e sem atribuição fictícia aos alunos.
-- [x] **Resposta inicial** de cada ficha com trecho e arquivo completo preservado.
-- [x] **Diagnóstico** específico e impacto descrito para cada implementação.
-- [x] **Refatoração** de cada ficha evidenciada por diff entre os arquivos do projeto.
-- [x] **Rastreabilidade** para o código atual e testes correspondentes.
-- [x] **Revisão, correções e reflexão humanas** da dupla, com nomes e datas reais.
-- [x] **Commits, execução manual em navegador e publicação** documentados pelos estudantes, se exigidos no enunciado.
+- **Três fichas identificadas** (simulador, gráfico e tema).
+- **Prompt documentado** em cada ficha, com origem declarada e sem atribuição fictícia aos alunos.
+- **Resposta inicial** de cada ficha com trecho e arquivo completo preservado.
+- **Diagnóstico** específico e impacto descrito para cada implementação.
+- **Refatoração** de cada ficha evidenciada por diff entre os arquivos do projeto.
+- **Rastreabilidade** para o código atual e testes correspondentes.
+- **Revisão crítica humana** relatada pela dupla, com identificação dos integrantes; datas, resultados e possíveis correções próprias devem estar registrados em `REGISTRO_DA_DUPLA.md`.
+- **Commits, execução manual em navegador e publicação** documentados pelos estudantes, se exigidos no enunciado.
 
 ## Integração e limites
 
-A versão clássica `js/app.bundle.js` permite abrir `index.html` por `file://`; os módulos em `js/` são as fontes de manutenção. Para atualizar o bundle após mudanças no JS modular, executar `npm run build`. O projeto contém controles alternativos para a navegação, cópias locais de dependências e ajustes de layout móvel.
+A versão clássica `app.bundle.js` permite abrir `index.html` por `file://`; os módulos JavaScript na raiz são as fontes de manutenção. Para atualizar o bundle após mudanças no JS modular, executar `npm run build`. O projeto contém controles alternativos para a navegação, cópias locais de dependências e ajustes de layout móvel.
 
-**Validação e autoria:** `VALIDACAO.md` descreve os testes executados no histórico do projeto e suas limitações; não deve ser usado para afirmar que a dupla os realizou. Esta auditoria foi organizada e conferida contra os arquivos presentes no ZIP. Nenhum commit, autoria estudantil, nova conversa histórica ou deploy foi simulado.
+**Validação e autoria:** os casos automatizados estão em `core.test.js` e `ui.test.cjs`. Os testes manuais declarados pela dupla estão em `REGISTRO_DA_DUPLA.md`; um registro documental não comprova, isoladamente, a execução. Esta auditoria foi organizada com assistência de IA sem simular autoria estudantil ou um novo deploy.
 
 ## Rechecagem desta organização — 02/11/2026
 
 - Conferidas **3 fichas** e **3 ocorrências de cada título** obrigatório: Prompt, Resposta, Diagnóstico e Refatoração.
-- Conferido que os três diffs documentados correspondem exatamente aos arquivos `auditoria/v1/*.js` e `js/*.js` incluídos nesta entrega.
+- Conferido que os três diffs documentados correspondem às versões iniciais `auditoria-v1-*.js` e aos módulos finais `simulator.js`, `chart.js` e `theme.js` incluídos neste pacote.
 - `npm test` executado nesta edição: **4 testes aprovados, 0 falhas**.
-- `npm run test:ui`, pois as dependências de desenvolvimento não estão instaladas neste ambiente de trabalho. Os resultados históricos e seus limites continuam descritos em `VALIDACAO.md`.
+- `npm run test:ui` **não foi reexecutado nesta edição**, pois as dependências de desenvolvimento não estão instaladas neste ambiente de trabalho. Os resultados desta execução devem ser registrados sem confundi-los com os relatos manuais da dupla.
 - Nenhum arquivo de comportamento da aplicação foi alterado nesta edição; somente o documento de auditoria foi reorganizado e corrigido.
 
-## Conferência complementar do pacote — 03/11/2026
+## Conferência complementar do pacote — 02/11/2026
 
-Nesta preparação para a entrega foi incluído em `tests/ui.test.cjs` um caso para simular erro de construção de gráfico, mas sua execução por `jsdom` ainda depende da instalação das dependências de desenvolvimento. Como conferência adicional, o mesmo cenário foi **executado em Chromium headless** com os scripts locais incorporados: a tabela e o aviso de indisponibilidade continuaram funcionando e não houve exceção de JavaScript. O fluxo de quatro cenários, o download, os três indicadores e a alternância de tema também funcionaram em Chromium por esse método, com zero mensagens de Console do tipo `error`. O acesso real ao GitHub Pages e às CDNs.
+Nesta preparação para a entrega foi incluído em `ui.test.cjs` um caso para simular erro de construção de gráfico, mas sua execução por `jsdom` ainda depende da instalação das dependências de desenvolvimento. Como conferência adicional, o mesmo cenário foi **executado em Chromium headless** com os scripts locais incorporados: a tabela e o aviso de indisponibilidade continuaram funcionando e não houve exceção de JavaScript. O fluxo de quatro cenários, o download, os três indicadores e a alternância de tema também funcionaram em Chromium por esse método, com zero mensagens de Console do tipo `error`. Naquela conferência técnica (02/11/2026), o acesso real ao GitHub Pages e às CDNs **não foi verificado**. A publicação posterior está registrada na atualização abaixo.
 
+Esta conferência adicional foi feita pelo assistente. **Não substitui intervenção manual dos integrantes, autoria acadêmica exigida ou commits próprios.**
+
+## Atualização posterior — publicação e revisão da dupla
+
+Após a conferência técnica de 02/11/2026, o projeto foi publicado e os integrantes informaram ter realizado revisões manuais do simulador, dos gráficos e do tema. Os procedimentos e resultados declarados devem ser confrontados com `REGISTRO_DA_DUPLA.md`; esta seção não substitui capturas, logs ou outras evidências de execução.
+
+- **Repositório público:** https://github.com/henriquepedro500/Margem-Humana
+- **GitHub Pages:** https://henriquepedro500.github.io/Margem-Humana/
+- **Pedro Henrique Teixeira De Lima — commit de documentação:** https://github.com/henriquepedro500/Margem-Humana/commit/a3ae0a62b52ef8ec1e224b488f722745d2d746a7
+- **João Pedro De Souza — commit de documentação:** https://github.com/henriquepedro500/Margem-Humana/commit/618a448a0fb835c015831fe1ff887f74f8ed6943
+
+Os commits acima comprovam edições documentais atribuídas aos integrantes, mas não comprovam, isoladamente, a execução de todos os testes nem a autoria manual das refatorações originalmente produzidas por IA. Os caminhos deste documento foram alinhados ao formato com arquivos na raiz do repositório.

@@ -30,7 +30,7 @@ export function mountSimulator(root) {
     }
     const confirm = element('button', revealed ? (index === scenarios.length-1 ? 'Ver protocolo' : 'Próximo cenário') : 'Analisar decisão','btn btn-primary');
     confirm.type = 'button'; confirm.disabled = !selected;
-    const feedback = element('section');
+    const feedback = element('div');
     feedback.setAttribute('aria-live','polite');
     if (revealed) {
       const choice = scenario.options.find(option=>option.id===selected);
@@ -61,7 +61,10 @@ export function mountSimulator(root) {
     const restart = element('button','Refazer cenários','btn btn-outline-secondary');
     restart.type = 'button';
     restart.addEventListener('click',()=>{index=0;selected=null;revealed=false;answers.fill(null);draw(true);});
-    root.append(heading,score,element('p',result.notice),list,
+    const completed = element('progress');
+    completed.max = scenarios.length; completed.value = scenarios.length;
+    completed.setAttribute('aria-label', 'Todos os quatro cenários concluídos');
+    root.append(completed,heading,score,element('p',result.notice),list,
       element('p','A equipe precisa garantir tempo de revisão, mentoria e espaço para questionar sugestões. O esforço individual não substitui essas condições.'),download,restart);
     focusHeading(heading);
   }

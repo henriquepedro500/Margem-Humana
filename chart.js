@@ -9,10 +9,13 @@ export function mountChart(root) {
   }
   const heading = element('h3');
   const frame = element('figure');
+  const chartArea = element('div', undefined, 'chart-area');
+  chartArea.setAttribute('role', 'group'); chartArea.setAttribute('aria-label', 'Área do gráfico');
   const canvas = element('canvas');
   canvas.setAttribute('role','img'); canvas.setAttribute('aria-describedby','mh-chart-summary');
   const summary = element('figcaption'); summary.id = 'mh-chart-summary';
-  frame.append(canvas,summary);
+  chartArea.append(canvas);
+  frame.append(chartArea,summary);
   const table = element('table',undefined,'table');
   const caption = element('caption','Valores do indicador selecionado');
   const head = element('thead'); const row = element('tr');
@@ -41,15 +44,22 @@ export function mountChart(root) {
     const dark = document.documentElement.classList.contains('theme-dark');
     const textColor = dark ? '#edf2f5' : '#152630';
     const gridColor = dark ? '#53646c' : '#c3cdd2';
+    try {
     chart = new globalThis.Chart(canvas,{
       type:'bar',data:{labels:data.labels,datasets:[{label:data.unit,data:data.values,
-        backgroundColor:['#087f74','#a95822'],borderWidth:0,borderRadius:6}]},
-      options:{responsive:true,aspectRatio:1.8,animation:!matchMedia('(prefers-reduced-motion: reduce)').matches,
+        backgroundColor:dark ? ['#87c9b0','#edb78b'] : ['#267363','#ad572d'],borderWidth:0,borderRadius:6}]},
+      options:{responsive:true,maintainAspectRatio:false,animation:!matchMedia('(prefers-reduced-motion: reduce)').matches,
         plugins:{legend:{display:false},tooltip:{callbacks:{label:context=>`${context.parsed.y}%`}}},
         scales:{y:{beginAtZero:true,max:select.value==='produtividade'?40:100,
           ticks:{color:textColor,callback:value=>`${value}%`},grid:{color:gridColor}},
           x:{ticks:{color:textColor},grid:{display:false}}}}
     });
+    } catch {
+      const broken = globalThis.Chart.getChart?.(canvas);
+      broken?.destroy();
+      canvas.hidden = true;
+      status.textContent = 'A visualização está indisponível. Consulte os valores na tabela.';
+    }
   }
   select.addEventListener('change',render);
   document.addEventListener('mh:theme',render);

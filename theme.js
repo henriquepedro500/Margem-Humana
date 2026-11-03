@@ -16,7 +16,8 @@ export function mountTheme(button) {
     document.documentElement.classList.toggle('theme-dark',value==='dark');
     document.documentElement.setAttribute('data-bs-theme',value);
     button.setAttribute('aria-pressed',String(value==='dark'));
-    button.textContent = value==='dark' ? 'Tema escuro: ativado' : 'Tema escuro: desativado';
+    button.textContent = value==='dark' ? 'Tema claro' : 'Tema escuro';
+    button.setAttribute('aria-label', value==='dark' ? 'Tema escuro ativado. Mudar para tema claro' : 'Tema escuro desativado. Mudar para tema escuro');
     document.dispatchEvent(new CustomEvent('mh:theme'));
   }
   apply(preference ?? (media.matches?'dark':'light'));

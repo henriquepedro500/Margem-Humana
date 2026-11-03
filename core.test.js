@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { scenarios, evaluate, buildProtocol } from '../js/scenarios.js';
-import { getDataset } from '../js/data.js';
-import { readPreference, writePreference } from '../js/theme.js';
+import { scenarios, evaluate, buildProtocol } from './scenarios.js';
+import { getDataset } from './data.js';
+import { readPreference, writePreference } from './theme.js';
 test('todas as 81 trajetórias têm resultado limitado e quatro ações',()=>{
   for(const a of scenarios[0].options) for(const b of scenarios[1].options)
   for(const c of scenarios[2].options) for(const d of scenarios[3].options){

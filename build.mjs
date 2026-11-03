@@ -6,8 +6,8 @@ import { dirname, join } from 'node:path';
 const root = dirname(fileURLToPath(import.meta.url));
 const files = ['dom.js','scenarios.js','data.js','theme.js','simulator.js','chart.js','app.js'];
 const code = files.map(name => {
-  const source = readFileSync(join(root,'js',name),'utf8');
+  const source = readFileSync(join(root,name),'utf8');
   return `// SOURCE: ${name}\n` + source.replace(/^import .+ from ['"].+['"];?\r?\n/gm,'').replace(/^export /gm,'');
 }).join('\n\n');
-writeFileSync(join(root,'js','app.bundle.js'),`/* Gerado por node build.mjs. Editar os módulos de origem. */\n(()=>{\n'use strict';\n${code}\n})();\n`);
-console.log('js/app.bundle.js atualizado.');
+writeFileSync(join(root,'app.bundle.js'),`/* Gerado por node build.mjs. Editar os módulos de origem. */\n(()=>{\n'use strict';\n${code}\n})();\n`);
+console.log('app.bundle.js atualizado.');

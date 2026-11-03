@@ -4,9 +4,9 @@ const {readFileSync}=require('node:fs');
 const {resolve}=require('node:path');
 const {JSDOM}=require('jsdom');
 const cssTree=require('css-tree');
-const root=resolve(__dirname,'..');
+const root=__dirname;
 const html=readFileSync(resolve(root,'index.html'),'utf8');
-const bundle=readFileSync(resolve(root,'js/app.bundle.js'),'utf8');
+const bundle=readFileSync(resolve(root,'app.bundle.js'),'utf8');
 function setup({chart=false,file=false}={}) {
  const dom=new JSDOM(html,{url:file?'file:///margem-humana/index.html':'https://example.test/margem-humana/',runScripts:'outside-only'});
  const w=dom.window;
@@ -31,7 +31,7 @@ test('HTML tem hierarquia base, IDs únicos, âncoras e arquivos locais válidos
  for(const tag of ['header','nav','main','section','article','aside','footer'])assert.ok(d.querySelector(tag));
 });
 test('CSS passa pelo parser e pelas gramáticas de propriedades conhecidas',()=>{
- const errors=[];const css=readFileSync(resolve(root,'css/styles.css'),'utf8');
+ const errors=[];const css=readFileSync(resolve(root,'styles.css'),'utf8');
  const ast=cssTree.parse(css,{onParseError:e=>errors.push(e.message)});
  cssTree.walk(ast,{visit:'Declaration',enter(node){if(node.property.startsWith('--'))return;const value=cssTree.generate(node.value);if(/(?:var|clamp)\(/.test(value))return; // Gramática matemática moderna conferida pelo navegador.
  const result=cssTree.lexer.matchProperty(node.property,node.value);if(result.error && !result.error.message.startsWith('Unknown property'))errors.push(`${node.property}: ${value} — ${result.error.message}`);}});
