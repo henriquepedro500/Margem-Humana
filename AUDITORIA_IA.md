@@ -282,7 +282,7 @@ A versão clássica `app.bundle.js` permite abrir `index.html` por `file://`; os
 
 **Validação e autoria:** os casos automatizados estão em `core.test.js` e `ui.test.cjs`. Os testes manuais declarados pela dupla estão em `REGISTRO_DA_DUPLA.md`; um registro documental não comprova, isoladamente, a execução. Esta auditoria foi organizada com assistência de IA sem simular autoria estudantil ou um novo deploy.
 
-## Rechecagem desta organização — 02/11/2026
+## Rechecagem desta organização — 11/02/2026
 
 - Conferidas **3 fichas** e **3 ocorrências de cada título** obrigatório: Prompt, Resposta, Diagnóstico e Refatoração.
 - Conferido que os três diffs documentados correspondem às versões iniciais `auditoria-v1-*.js` e aos módulos finais `simulator.js`, `chart.js` e `theme.js` incluídos neste pacote.
@@ -290,7 +290,7 @@ A versão clássica `app.bundle.js` permite abrir `index.html` por `file://`; os
 - `npm run test:ui` **não foi reexecutado nesta edição**, pois as dependências de desenvolvimento não estão instaladas neste ambiente de trabalho. Os resultados desta execução devem ser registrados sem confundi-los com os relatos manuais da dupla.
 - Nenhum arquivo de comportamento da aplicação foi alterado nesta edição; somente o documento de auditoria foi reorganizado e corrigido.
 
-## Conferência complementar do pacote — 02/11/2026
+## Conferência complementar do pacote — 11/02/2026
 
 Nesta preparação para a entrega foi incluído em `ui.test.cjs` um caso para simular erro de construção de gráfico, mas sua execução por `jsdom` ainda depende da instalação das dependências de desenvolvimento. Como conferência adicional, o mesmo cenário foi **executado em Chromium headless** com os scripts locais incorporados: a tabela e o aviso de indisponibilidade continuaram funcionando e não houve exceção de JavaScript. O fluxo de quatro cenários, o download, os três indicadores e a alternância de tema também funcionaram em Chromium por esse método, com zero mensagens de Console do tipo `error`. Naquela conferência técnica (02/11/2026), o acesso real ao GitHub Pages e às CDNs **não foi verificado**. A publicação posterior está registrada na atualização abaixo.
 
