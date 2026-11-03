@@ -9,9 +9,11 @@ Este arquivo é um **modelo de registro**, não comprova participação por si s
 | Nome completo | Pedro Henrique Teixeira De Lima | João Pedro De Sousa |
 | Usuário GitHub | @henriquepedro500 | @joaoopedro2007 |
 | Área revisada e alterações feitas | Simuladores e registro d resultado  | Nenhuma|
-| Arquivos efetivamente editados | index.html | fonts.css |
+| Arquivos efetivamente editados | index.html e font.css | prencher |
 | Justificativa das decisões próprias | Erro ao entrar no arquivo do produto|
-| URL de commit(s) reais | [PREENCHER] | [PREENCHER] |
+| URL de commit(s) reais | (https://henriquepedro500.github.io/Margem-Humana/)https://henriquepedro500.github.io/Margem-Humana/https://henriquepedro500.github.io/Margem-Humana/
+
+| [PREENCHER] |
 
 **Aviso de autoria:** o pacote inicial (inclusive HTML, CSS e JavaScript) recebeu assistência de IA. Apenas ações que os alunos realmente fizeram, e podem justificar, devem aparecer como contribuições autorais.
 
