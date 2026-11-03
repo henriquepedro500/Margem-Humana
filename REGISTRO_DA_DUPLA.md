@@ -6,7 +6,7 @@ As alterações abaixo foram realizadas manualmente pelos integrantes no arquivo
 
 | Informação | Pedro Henrique | João Pedro |
 |---|---|---|
-| Integrante | Pedro Henrique Teixeira De Lima | João Pedro De Souza |
+| Integrante | Pedro Henrique Teixeira De Lima | João Pedro De Sousa |
 | GitHub | @henriquepedro500 | @joaoopedro2007 |
 | Arquivo alterado | `styles.css` | `styles.css` |
 | Elemento modificado | Variável `--radius` em `:root` | Propriedade `font-size` da classe `.section-lead` |
