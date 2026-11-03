@@ -7,7 +7,7 @@
 | Área revisada | Simulador, protocolo, tema e documentação | Gráficos, responsividade, Console e acessibilidade |
 | Arquivos comprovadamente editados | REGISTRO_DA_DUPLA.md | REGISTRO_DA_DUPLA.md |
 | Justificativa da revisão | Verificar o comportamento do laboratório, das decisões e dos controles do site | Verificar a apresentação dos indicadores, adaptação das telas e funcionamento dos recursos |
-| URL de commit(s) reais | [Commit de Pedro](https://github.com/henriquepedro500/Margem-Humana/commit/e55a1b3be24b7c00927826e54b990a3e6a0b4cfc) | [Commit de João](https://github.com/henriquepedro500/Margem-Humana/commit/926e98a8258ac16e8367e91a19d141e984fcf60a) |
+| URL de commit(s) reais | [Commit Pedro](https://github.com/henriquepedro500/Margem-Humana/commit/e55a1b3be24b7c00927826e54b990a3e6a0b4cfc) | [Commit João](https://github.com/henriquepedro500/Margem-Humana/commit/926e98a8258ac16e8367e91a19d141e984fcf60a) |
 
 ## 2. Registro de revisão crítica de auditoria
 
