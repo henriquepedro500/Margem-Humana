@@ -104,7 +104,6 @@ Compatibilidade pretendida: Chrome, Firefox, Safari e Edge modernos. Há tratame
 
 ### Referências
 
-Referências completas e limites: [docs/PESQUISA.md](docs/PESQUISA.md).
 
 - Brynjolfsson, Li e Raymond (2025), *Generative AI at Work*: https://doi.org/10.1093/qje/qjae044
 - Deloitte (2025): https://www.deloitte.com/global/en/about/press-room/deloitte-2025-gen-z-and-millennial-survey.html
