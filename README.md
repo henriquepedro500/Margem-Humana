@@ -5,7 +5,7 @@
 
 Site sobre autonomia, empatia e aprendizagem de jovens atendentes diante de sugestões de IA e metas de velocidade. O visitante analisa quatro situações fictícias e exporta um protocolo de revisão. Os gráficos distinguem evidências de produtividade de expectativas geracionais.
 
-![Preview real do site Margem Humana](assets/img/preview.png)
+![Preview real do site Margem Humana][(assets/img/preview.png)](https://henriquepedro500.github.io/Margem-Humana/)
 
 
 ### Integrantes, repositório e site publicado
