@@ -6,16 +6,16 @@ As alterações abaixo foram realizadas manualmente pelos integrantes no arquivo
 
 | Informação | Pedro Henrique | João Pedro |
 |---|---|---|
-| Integrante | Pedro Henrique Teixeira De Lima | João Pedro De Sousa |
+| Integrante | Pedro Henrique Teixeira De Lima | João Pedro De Souza |
 | GitHub | @henriquepedro500 | @joaoopedro2007 |
 | Arquivo alterado | `styles.css` | `styles.css` |
-| Elemento modificado | Variável `--radius` em `:root` | Propriedade `font-size` da classe `.section-lead` |
-| Valor anterior | `1.15rem` | `1.05rem` |
-| Valor novo | `1.35rem` | `1.1rem` |
-| Objetivo | Personalizar o arredondamento dos componentes | Melhorar a legibilidade dos textos introdutórios |
-| Justificativa | Cantos mais arredondados para proporcionar uma aparência visual mais suave | Aumento discreto do tamanho dos textos para facilitar a leitura |
-| Validação | Alteração salva no GitHub e aparência conferida no site publicado | Alteração salva no GitHub; registrar a confirmação visual |
-| Evidência |(https://github.com/henriquepedro500/Margem-Humana/commit/ed88e977b32c7389a2d14bc3596fb4d5b7eafcf3) | [INSERIR LINK DO NOVO COMMIT DE JOÃO] |
+| Elemento modificado | Variável `--radius` em `:root` | Propriedade `font-size` das classes `.tension-card > p` e `.nav-link` |
+| Valor anterior | `1.15rem` | Cartões: `0.86rem`; menu: `0.8rem` |
+| Valor novo | `1.35rem` | Cartões: `0.95rem`; menu: `0.85rem` |
+| Objetivo | Personalizar o arredondamento dos componentes | Melhorar a legibilidade dos cartões e do menu de navegação |
+| Justificativa | Cantos mais arredondados para proporcionar uma aparência visual mais suave | Aumento discreto das letras para facilitar a leitura e melhorar a experiência dos usuários |
+| Validação | Alteração salva no GitHub e aparência conferida no site publicado | Alterações salvas no GitHub; conferir a apresentação em computador e celular |
+| Evidência | [Commit do Pedro](https://github.com/henriquepedro500/Margem-Humana/commit/ed88e977b32c7389a2d14bc3596fb4d5b7eafcf3) | [Commit do João](https://github.com/henriquepedro500/Margem-Humana/commit/1796f870ca11ea47562407523b59a1b823d20aa0) |
 
 **Observação sobre autoria:** as alterações descritas são contribuições manuais da dupla sobre uma base de CSS anteriormente desenvolvida com assistência de IA. Os commits permitem verificar as modificações realizadas pelos integrantes.
 
