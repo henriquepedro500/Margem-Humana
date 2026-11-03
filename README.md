@@ -7,7 +7,6 @@ Site sobre autonomia, empatia e aprendizagem de jovens atendentes diante de suge
 
 ![Preview real do site Margem Humana](assets/img/preview.png)
 
-**Estado do pacote:** arquivos locais preparados para revisão e publicação. **GitHub Pages:** ainda não publicado; não existe link público confirmado nesta entrega.
 
 ### Integrantes, repositório e site publicado
 
@@ -18,7 +17,6 @@ Site sobre autonomia, empatia e aprendizagem de jovens atendentes diante de suge
 | Repositório público | https://github.com/henriquepedro500/Margem-Humana |
 | GitHub Pages | https://henriquepedro500.github.io/Margem-Humana/ |
 
-Não substitua esses campos por nomes fictícios. Use [docs/REGISTRO_DA_DUPLA.md](docs/REGISTRO_DA_DUPLA.md) para registrar, com evidência, o trabalho de cada integrante, testes manuais e correções efetuadas.
 
 **Transparência sobre IA e autoria:** a implementação fornecida nesta versão foi produzida e revisada com assistência de IA, inclusive HTML e CSS. Caso o enunciado exija autoria manual nessas etapas, ainda é indispensável o trabalho efetivo e documentado dos integrantes. As três fichas do [AUDITORIA_IA.md](AUDITORIA_IA.md) distinguem especificações reconstruídas de mensagens literalmente enviadas. Não são atribuídas revisões, commits ou testes manuais aos estudantes sem evidência.
 
