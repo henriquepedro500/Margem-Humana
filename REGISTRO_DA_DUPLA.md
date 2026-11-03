@@ -13,7 +13,7 @@ Este arquivo é um **modelo de registro**, não comprova participação por si s
 | Justificativa das decisões próprias | Erro ao entrar no arquivo do produto| Indicadores não correspondendo ao gráfico |
 | URL de commit(s) reais | (https://henriquepedro500.github.io/Margem-Humana/)https://henriquepedro500.github.io/Margem-Humana/https://henriquepedro500.github.io/Margem-Humana/)
 
-| [PREENCHER] |
+| (https://github.com/henriquepedro500/Margem-Humana/commit/926e98a8258ac16e8367e91a19d141e984fcf60a) |
 
 **Aviso de autoria:** o pacote inicial (inclusive HTML, CSS e JavaScript) recebeu assistência de IA. Apenas ações que os alunos realmente fizeram, e podem justificar, devem aparecer como contribuições autorais.
 
