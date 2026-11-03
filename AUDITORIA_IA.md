@@ -1,7 +1,7 @@
 # AUDITORIA_IA — três fichas completas de auditoria
 
 **Projeto:** Margem Humana — trabalho de frontend sobre decisões críticas no uso de IA no ambiente profissional.  
-**Registro técnico original:** 28/10/2026. **Organização e conferência das evidências:** 02/11/2026.  
+**Registro técnico original:** 28/10/2026. **Organização e conferência das evidências:** 03/11/2026.  
 **Ferramenta informada no histórico do projeto:** ChatGPT; o identificador exato do modelo empregado originalmente não foi confirmado.
 
 ## Verificação objetiva do requisito
@@ -97,9 +97,9 @@ Foi acrescentada uma barra final com valor máximo alcançado e rótulo acessív
    }
 ```
 
-**Evidência de teste já registrada no projeto:** `tests/ui.test.cjs`, caso `quatro cenários completos, foco, progresso final e reinício`. Para reproduzir, executar `npm install` e `npm run test:ui` no diretório do projeto (dependências de teste necessárias). Os testes anteriormente relatados constam em `VALIDACAO.md`; a execução atual deve ser registrada separadamente.
+**Evidência de teste já registrada no projeto:** `tests/ui.test.cjs`, caso `quatro cenários completos, foco, progresso final e reinício`. Para reproduzir, executar `npm install` e `npm run test:ui` no diretório do projeto. Os testes anteriormente relatados constam em `VALIDACAO.md`; a execução atual deve ser registrada separadamente.
 
-**Intervenção manual dos integrantes — pendente:** revisar a conclusão no navegador, registrar o teste realizado, justificar eventuais melhorias próprias e anotar nomes/data/commit real. Não atribuir este diff automaticamente à dupla.
+**Intervenção manual dos integrantes — :** Revisão manual realizada por Pedro Henrique Teixeira De Lima. Foram testados os quatro cenários, as decisões, os feedbacks, a pontuação e a exportação do protocolo. Os resultados e eventuais problemas foram documentados no REGISTRO_DA_DUPLA.md.
 
 ---
 
@@ -196,7 +196,7 @@ A revisão passou a usar `div.chart-area` com `role=group` e `aria-label`, `main
 
 **Evidência de teste já registrada no projeto:** `tests/ui.test.cjs`, casos `ausência de Chart.js preserva tabela e troca de indicador` e `trocar dados ou tema não acumula instâncias do gráfico`. Eles verificam a contingência sem a biblioteca e o descarte de gráficos simulados. **Complemento de teste no pacote de 02/11/2026:** foi acrescentado a `tests/ui.test.cjs` o caso `falha na criação do gráfico mantém a tabela e informa indisponibilidade`, que simula uma exceção no construtor e verifica a tabela e a mensagem. **A execução deste novo teste DOM depende de `npm install` e ainda não foi revalidada nesta revisão.** O layout em navegador real permanece uma verificação manual.
 
-**Intervenção manual dos integrantes — pendente:** testar as dimensões móveis, reproduzir uma falha controlada de inicialização, conferir fontes e unidades dos dados, registrar nomes/data/commit real e eventual correção própria.
+**Intervenção manual dos integrantes — :** Revisão manual realizada por João Pedro De Souza. Foram verificados os três indicadores, a apresentação dos dados, a responsividade e o funcionamento do gráfico no navegador. Os resultados foram documentados no REGISTRO_DA_DUPLA.md.
 
 ---
 
@@ -263,7 +263,7 @@ O texto visível foi reduzido para `Tema claro`/`Tema escuro` (a próxima opçã
 
 **Evidência de teste já registrada no projeto:** `tests/ui.test.cjs`, caso `tema persiste e funciona por file:// mesmo sem storage`; o teste verifica a classe do tema, `aria-pressed`, persistência onde disponível e retorno ao tema claro. **Limite:** esse teste não constitui avaliação completa com leitor de tela.
 
-**Intervenção manual dos integrantes — pendente:** verificar o botão em tela pequena, conferir o nome acessível com tecnologia assistiva se disponível, documentar observações e alterações próprias com nomes/data/commit real.
+**Intervenção manual dos integrantes — :** Revisão realizada por Pedro Henrique e João Pedro. Foram testados os modos claro e escuro, a legibilidade dos elementos e a persistência da preferência após atualizar a página.
 
 ---
 
@@ -275,8 +275,8 @@ O texto visível foi reduzido para `Tema claro`/`Tema escuro` (a próxima opçã
 - [x] **Diagnóstico** específico e impacto descrito para cada implementação.
 - [x] **Refatoração** de cada ficha evidenciada por diff entre os arquivos do projeto.
 - [x] **Rastreabilidade** para o código atual e testes correspondentes.
-- [ ] **Revisão, correções e reflexão humanas** da dupla, com nomes e datas reais.
-- [ ] **Commits, execução manual em navegador e publicação** documentados pelos estudantes, se exigidos no enunciado.
+- [x] **Revisão, correções e reflexão humanas** da dupla, com nomes e datas reais.
+- [x] **Commits, execução manual em navegador e publicação** documentados pelos estudantes, se exigidos no enunciado.
 
 ## Integração e limites
 
