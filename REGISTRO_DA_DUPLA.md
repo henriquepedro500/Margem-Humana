@@ -63,4 +63,4 @@ Preencher com **data, navegador/versão, largura, resultado, observação e resp
 | README atualizado com os dois links e autores | [ ] |
 | Evidências de commits de ambas as contas registradas | [ ] |
 
-Para o passo a passo do GitHub: [ENTREGA.md](ENTREGA.md). Para a situação dos nove critérios: [CHECKLIST.md](CHECKLIST.md).
+
