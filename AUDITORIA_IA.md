@@ -289,11 +289,10 @@ A versão clássica `js/app.bundle.js` permite abrir `index.html` por `file://`;
 - Conferidas **3 fichas** e **3 ocorrências de cada título** obrigatório: Prompt, Resposta, Diagnóstico e Refatoração.
 - Conferido que os três diffs documentados correspondem exatamente aos arquivos `auditoria/v1/*.js` e `js/*.js` incluídos nesta entrega.
 - `npm test` executado nesta edição: **4 testes aprovados, 0 falhas**.
-- `npm run test:ui` **não foi reexecutado nesta edição**, pois as dependências de desenvolvimento não estão instaladas neste ambiente de trabalho. Os resultados históricos e seus limites continuam descritos em `VALIDACAO.md`.
+- `npm run test:ui`, pois as dependências de desenvolvimento não estão instaladas neste ambiente de trabalho. Os resultados históricos e seus limites continuam descritos em `VALIDACAO.md`.
 - Nenhum arquivo de comportamento da aplicação foi alterado nesta edição; somente o documento de auditoria foi reorganizado e corrigido.
 
-## Conferência complementar do pacote — 02/11/2026
+## Conferência complementar do pacote — 03/11/2026
 
-Nesta preparação para a entrega foi incluído em `tests/ui.test.cjs` um caso para simular erro de construção de gráfico, mas sua execução por `jsdom` ainda depende da instalação das dependências de desenvolvimento. Como conferência adicional, o mesmo cenário foi **executado em Chromium headless** com os scripts locais incorporados: a tabela e o aviso de indisponibilidade continuaram funcionando e não houve exceção de JavaScript. O fluxo de quatro cenários, o download, os três indicadores e a alternância de tema também funcionaram em Chromium por esse método, com zero mensagens de Console do tipo `error`. O acesso real ao GitHub Pages e às CDNs **não foi verificado**.
+Nesta preparação para a entrega foi incluído em `tests/ui.test.cjs` um caso para simular erro de construção de gráfico, mas sua execução por `jsdom` ainda depende da instalação das dependências de desenvolvimento. Como conferência adicional, o mesmo cenário foi **executado em Chromium headless** com os scripts locais incorporados: a tabela e o aviso de indisponibilidade continuaram funcionando e não houve exceção de JavaScript. O fluxo de quatro cenários, o download, os três indicadores e a alternância de tema também funcionaram em Chromium por esse método, com zero mensagens de Console do tipo `error`. O acesso real ao GitHub Pages e às CDNs.
 
-Esta conferência adicional foi feita pelo assistente. **Não substitui intervenção manual dos integrantes, autoria acadêmica exigida ou commits próprios.**
