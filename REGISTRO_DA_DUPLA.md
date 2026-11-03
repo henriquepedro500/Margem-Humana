@@ -15,7 +15,7 @@ As alterações abaixo foram realizadas manualmente pelos integrantes no arquivo
 | Objetivo | Personalizar o arredondamento dos componentes | Melhorar a legibilidade dos textos introdutórios |
 | Justificativa | Cantos mais arredondados para proporcionar uma aparência visual mais suave | Aumento discreto do tamanho dos textos para facilitar a leitura |
 | Validação | Alteração salva no GitHub e aparência conferida no site publicado | Alteração salva no GitHub; registrar a confirmação visual |
-| Evidência | [INSERIR LINK DO NOVO COMMIT DE PEDRO] | [INSERIR LINK DO NOVO COMMIT DE JOÃO] |
+| Evidência |(https://github.com/henriquepedro500/Margem-Humana/commit/ed88e977b32c7389a2d14bc3596fb4d5b7eafcf3) | [INSERIR LINK DO NOVO COMMIT DE JOÃO] |
 
 **Observação sobre autoria:** as alterações descritas são contribuições manuais da dupla sobre uma base de CSS anteriormente desenvolvida com assistência de IA. Os commits permitem verificar as modificações realizadas pelos integrantes.
 
