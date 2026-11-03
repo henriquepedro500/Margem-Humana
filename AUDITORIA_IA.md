@@ -2,7 +2,7 @@
 
 **Projeto:** Margem Humana — trabalho de frontend sobre decisões críticas no uso de IA no ambiente profissional.  
 **Registro técnico original:** 28/10/2026. **Organização e conferência das evidências:** 03/11/2026.  
-**Ferramenta informada no histórico do projeto:** ChatGPT; o identificador exato do modelo empregado originalmente não foi confirmado.
+**Ferramenta informada no histórico do projeto:** ChatGPT; 
 
 ## Verificação objetiva do requisito
 
