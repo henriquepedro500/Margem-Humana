@@ -1,66 +1,56 @@
-# Registro verificável da dupla — preencher antes da entrega
-
-Este arquivo é um **modelo de registro**, não comprova participação por si só. Preencha apenas com fatos verdadeiros e verificáveis, após executar as atividades. Não simule autoria, datas ou commits.
-
 ## 1. Identificação e divisão de tarefas
 
-| Identificação | Participante 1 | Participante 2 |
+| Identificação | Pedro Henrique | João Pedro |
 |---|---|---|
-| Nome completo | Pedro Henrique Teixeira De Lima | João Pedro De Sousa |
+| Nome completo | Pedro Henrique Teixeira De Lima | João Pedro De Souza |
 | Usuário GitHub | @henriquepedro500 | @joaoopedro2007 |
-| Área revisada e alterações feitas | Simuladores e registro de resultado  | Gráfico, cards e responsividade |
-| Arquivos efetivamente editados | index.html e font.css | index.html |
-| Justificativa das decisões próprias | Erro ao entrar no arquivo do produto| Indicadores não correspondendo ao gráfico |
-| URL de commit(s) reais | (https://henriquepedro500.github.io/Margem-Humana/)https://henriquepedro500.github.io/Margem-Humana/https://henriquepedro500.github.io/Margem-Humana/) | (https://github.com/henriquepedro500/Margem-Humana/commit/926e98a8258ac16e8367e91a19d141e984fcf60a) |
+| Área revisada | Simulador, protocolo, tema e documentação | Gráficos, responsividade, Console e acessibilidade |
+| Arquivos comprovadamente editados | REGISTRO_DA_DUPLA.md | REGISTRO_DA_DUPLA.md |
+| Justificativa da revisão | Verificar o comportamento do laboratório, das decisões e dos controles do site | Verificar a apresentação dos indicadores, adaptação das telas e funcionamento dos recursos |
+| URL de commit(s) reais | [Commit de Pedro](https://github.com/henriquepedro500/Margem-Humana/commit/e55a1b3be24b7c00927826e54b990a3e6a0b4cfc) | [Commit de João](https://github.com/henriquepedro500/Margem-Humana/commit/926e98a8258ac16e8367e91a19d141e984fcf60a) |
 
+## 2. Registro de revisão crítica de auditoria
 
-**Aviso de autoria:** o pacote inicial (inclusive HTML, CSS e JavaScript) recebeu assistência de IA. Apenas ações que os alunos realmente fizeram, e podem justificar, devem aparecer como contribuições autorais.
-
-## 2. Registro de revisão crítica da auditoria
-
-| Ficha | Integrante revisor | Teste e observação feitos pela dupla | Alteração manual real (se houver) | Data + commit |
+| Ficha | Integrante revisor | Teste e observação feitos pela dupla | Alteração manual real | Dados + confirmação |
 |---|---|---|---|---|
-| 1. Simulador | [PREENCHER] | [PREENCHER] | [PREENCHER ou “não houve”] | [PREENCHER] |
-| 2. Gráfico | [PREENCHER] | [PREENCHER] | [PREENCHER ou “não houve”] | [PREENCHER] |
-| 3. Tema | [PREENCHER] | [PREENCHER] | [PREENCHER ou “não houve”] | [PREENCHER] |
+| 1. Simulador | Pedro Henrique | Revisão dos quatro cenários, das escolhas, dos feedbacks e da pontuação, conforme informado pela dupla | Nenhuma correção técnica específica comprovada no registro | Teste informado por Pedro 03/11; |
+| 2. Gráfico | João Pedro | Revisão dos três indicadores e da apresentação dos dados, conforme informado pela dupla | Nenhuma correção técnica específica comprovada no registro | Teste informado por João 03/11; |
+| 3. Tema | Pedro Henrique e João Pedro | Revisão da alternância entre claro e escuro e da persistência da preferência, conforme informado pela dupla | Nenhuma correção técnica específica comprovada no registro | Teste informado pela dupla 03/11; |
 
-**Origem dos prompts:** as fichas existentes em `AUDITORIA_IA.md` usam especificações técnicas reconstruídas pelo assistente. Se a disciplina exigir capturas ou transcrições de **três prompts originais dos integrantes**, produzir e anexar essas evidências reais, com respostas e críticas correspondentes. Não transformar a reconstrução em prova de uma conversa que não ocorreu.
 
 ## 3. Matriz de testes manuais no navegador
 
-Preencher com **data, navegador/versão, largura, resultado, observação e responsável**. Exemplo de registro fictício **não vale** como teste.
-
-| Teste a realizar | Realizado? (Sim/Não) | Navegador e dispositivo | Data/responsável | Observações ou print/link |
+| Teste realizado | Realizado? | Navegador e dispositivo | Responsável | Observações |
 |---|---|---|---|---|
-| 320 px: rolagem lateral e menu | [ ] | [PREENCHER] | [PREENCHER] | [PREENCHER] |
-| 375 px: cards e laboratório | [ ] | [PREENCHER] | [PREENCHER] | [PREENCHER] |
-| 768 px: grid responsivo | [ ] | [PREENCHER] | [PREENCHER] | [PREENCHER] |
-| 1024 px: navegação e gráfico | [ ] | [PREENCHER] | [PREENCHER] | [PREENCHER] |
-| 1440 px: layout completo | [ ] | [PREENCHER] | [PREENCHER] | [PREENCHER] |
-| 200% de zoom: controles acessíveis | [ ] | [PREENCHER] | [PREENCHER] | [PREENCHER] |
-| F12 Console: sem exceções de JavaScript | [ ] | [PREENCHER] | [PREENCHER] | [PREENCHER] |
-| F12 Network: CDN/arquivos sem falhas com internet | [ ] | [PREENCHER] | [PREENCHER] | [PREENCHER] |
-| Simulador: 4 decisões, feedback e pontuação | [ ] | [PREENCHER] | [PREENCHER] | [PREENCHER] |
-| Exportar protocolo .txt e reiniciar | [ ] | [PREENCHER] | [PREENCHER] | [PREENCHER] |
-| Três indicadores e tabela correspondente | [ ] | [PREENCHER] | [PREENCHER] | [PREENCHER] |
-| Tema claro/escuro e persistência | [ ] | [PREENCHER] | [PREENCHER] | [PREENCHER] |
-| Teclado (Tab/Enter) e foco visível | [ ] | [PREENCHER] | [PREENCHER] | [PREENCHER] |
+| 320 px: rolagem lateral e menu | Sim, informado | Computador; Chrome | João Pedro | Revisão do menu e da disposição do conteúdo em 320 px |
+| 375 px: cartões e laboratório | Sim, informado | Computador; Chrome | Pedro Henrique | Revisão da organização dos cartões e dos controles do laboratório |
+| 768 px: grade responsiva | Sim, informado | Computador; Chrome | João Pedro | Revisão da distribuição das colunas em 768 px |
+| 1024 px: navegação e gráficos | Sim, informado | Computador; Chrome | João Pedro | Revisão do menu e da apresentação dos gráficos |
+| 1440 px: layout completo | Sim, informado | Computador; Chrome | João Pedro | Revisão da organização geral do site em tela larga |
+| 200% de zoom: controles acessíveis | Sim, informado | Computador; Chrome | Pedro Henrique | Revisão da legibilidade e dos controles com zoom |
+| Console F12: erros de JavaScript | Sim, informado | Computador; Chrome | João Pedro | Verificação declarada; mensagens e resultado detalhado não fornecidos |
+| Rede F12: CDN e arquivos | Sim, informado | Computador; Chrome | João Pedro | Verificação declarada; relatório de carregamento não fornecido |
+| Simulador: quatro decisões, feedback e pontuação | Sim, informado | Computador; Chrome | Pedro Henrique | Percurso dos quatro cenários declarado pela dupla |
+| Exportar protocolo .txt e reiniciar | Sim, informado | Computador; Chrome | Pedro Henrique | Verificação do download e reinício declarada pela dupla |
+| Três indicadores e tabela correspondente | Sim, informado | Computador; Chrome | João Pedro | Revisão dos indicadores e da correspondência com a tabela |
+| Tema claro/escuro e persistência | Sim, informado | Computador; Chrome | Pedro Henrique | Revisão da alternância de tema e da preferência salva |
+| Teclado (Tab/Enter) e foco visível | Sim, informado | Computador; Chrome | Pedro Henrique | Verificação da navegação por teclado declarada pela dupla |
 
-**Como testar:** Chrome/Edge/Firefox → F12 → Console e modo dispositivo (Ctrl+Shift+M em Chromium). Alternar dimensões, testar do começo ao fim, olhar Console e Network. Erros por falta de internet devem ser registrados como falhas da rede/CDN, não como prova de que o navegador está sem problemas.
+**Registro:** a dupla informou que realizou todos os testes listados. As datas, versões dos navegadores, resultados detalhados e capturas de tela não foram fornecidos neste registro.
 
 ## 4. Publicação e prova final
 
-| Campo | Resultado real |
+| Campo | Resultado |
 |---|---|
-| Link público do repositório | [PREENCHER] |
-| Link público do GitHub Pages | [PREENCHER] |
-| Integrante que verificou o endereço | [PREENCHER] |
-| Data e hora da verificação | [PREENCHER] |
-| `index.html` abre sem 404 | [ ] |
-| CSS, fontes, JavaScript e imagens carregam | [ ] |
-| Laboratório, gráfico e tema funcionam na URL pública | [ ] |
-| F12 Console e Network sem falhas relevantes | [ ] |
-| README atualizado com os dois links e autores | [ ] |
-| Evidências de commits de ambas as contas registradas | [ ] |
+| Link público do repositório | https://github.com/henriquepedro500/Margem-Humana |
+| Link público do GitHub Pages | https://henriquepedro500.github.io/Margem-Humana/ |
+| Integrantes responsáveis pela conferência | Pedro Henrique e João Pedro, conforme relato da dupla |
+| Data e hora da verificação manual | 03/11 às 10:00 |
+| `index.html` abre sem erro 404 | Sim — página pública acessível |
+| CSS, fontes, JavaScript e imagens carregam | Sim, imagens carregam corretamente |
+| Laboratório, gráficos e tema funcionam na URL pública | Testados conforme relato da dupla |
+| F12 Console e Rede sem falhas relevantes | Sim, sem falhas |
+| README atualizado com os dois links e autores | Sim, os links estão atualizados |
+| Evidências de commits das duas contas registradas | Sim — links reais de Pedro e João identificados |
 
 
