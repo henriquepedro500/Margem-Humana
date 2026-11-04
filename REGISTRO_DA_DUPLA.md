@@ -10,8 +10,8 @@ As alterações abaixo foram realizadas manualmente pelos integrantes no arquivo
 | GitHub | @henriquepedro500 | @joaoopedro2007 |
 | Arquivo alterado | `styles.css` | `styles.css` |
 | Elemento modificado | Variável `--radius` em `:root` e font-size | Propriedade `font-size` das classes `.tension-card > p` e `.nav-link` |
-| Valor anterior | `1.15rem`e '1.05'| Cartões: `0.86rem`; menu: `0.8rem` |
-| Valor novo | `1.35rem` e '1.1'| Cartões: `0.95rem`; menu: `0.85rem` |
+| Valor anterior | `1.15rem`e `1.05`| Cartões: `0.86rem`; menu: `0.8rem` |
+| Valor novo | `1.35rem` e `1.1`| Cartões: `0.95rem`; menu: `0.85rem` |
 | Objetivo | Personalizar o arredondamento dos componentes | Melhorar a legibilidade dos cartões e do menu de navegação |
 | Justificativa | Cantos mais arredondados para proporcionar uma aparência visual mais suave | Aumento discreto das letras para facilitar a leitura e melhorar a experiência dos usuários |
 | Validação | Alteração salva no GitHub e aparência conferida no site publicado | Alterações salvas no GitHub; conferir a apresentação em computador e celular |
