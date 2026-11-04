@@ -15,7 +15,7 @@ As alterações abaixo foram realizadas manualmente pelos integrantes no arquivo
 | Objetivo | Personalizar o arredondamento dos componentes | Melhorar a legibilidade dos cartões e do menu de navegação |
 | Justificativa | Cantos mais arredondados para proporcionar uma aparência visual mais suave | Aumento discreto das letras para facilitar a leitura e melhorar a experiência dos usuários |
 | Validação | Alteração salva no GitHub e aparência conferida no site publicado | Alterações salvas no GitHub; conferir a apresentação em computador e celular |
-| Evidência | [Commit do Pedro](https://github.com/henriquepedro500/Margem-Humana/commit/ed88e977b32c7389a2d14bc3596fb4d5b7eafcf3) | [Commit do João](https://github.com/henriquepedro500/Margem-Humana/commit/1796f870ca11ea47562407523b59a1b823d20aa0) |
+| Evidência | [Commit do Pedro](https://github.com/henriquepedro500/Margem-Humana/commit/ed88e977b32c7389a2d14bc3596fb4d5b7eafcf3 https://github.com/henriquepedro500/Margem-Humana/commit/52272ecdbfc72d76190f3fc6e651db005c8f97fc| [Commit do João](https://github.com/henriquepedro500/Margem-Humana/commit/1796f870ca11ea47562407523b59a1b823d20aa0) |
 
 **Observação sobre autoria:** as alterações descritas são contribuições manuais da dupla sobre uma base de CSS anteriormente desenvolvida com assistência de IA. Os commits permitem verificar as modificações realizadas pelos integrantes.
 
